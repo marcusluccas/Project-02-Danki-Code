@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 html, body{
@@ -18,10 +19,11 @@ html, body{
 .clear{
     clear: both;
 }
+/******/
 
 header{
-    background-color: #D6D6D6;
-    padding: 10px 2% 30px 2%;
+    background-color: rgb(180, 180, 180);
+    padding: 10px 2% 40px 2%;
 }
 
 .logo-1{
@@ -48,36 +50,36 @@ header{
 
 section.cover-form{
     width: 100%;
-    padding: 0 2%;
 }
 
 .bg{
-    height: 500px;
+    position: relative;
+    height: 560px;
     background-position: center;
     background-size: cover;
     background-image: url('../images/bg-form.jpg');
 }
 
 .form-container{
-    float: right;
-    margin-right: 40px;
+    position: absolute;
+    right: 30px;
+    top: -2.5%;
     width: 400px;
-    height: 110%;
-    position: relative;
-    top: -5%;
+    height: 105%;
+    box-shadow: 1px 1px 2px 1px rgb(180, 180, 180);
     background-color: white;
 }
 
 .form-container h2{
     font-weight: normal;
-    padding: 20px 15px;
+    padding: 25px 15px;
     color: black;
     font-size: 18px;
-    background-color: rgb(234, 236, 239);
+    background-color: rgb(210, 210, 210);
 }
 
 .form-container form{
-    margin-top: 8px;
+    margin-top: 20px;
     padding: 15px;
 }
 
@@ -99,7 +101,7 @@ section.cover-form{
     border: 1px solid #ccc;
     height: 45px;
     line-height: 45px;
-    padding: 10px;
+    padding-left: 10px;
 }
 
 .form-container form input[type=submit]{
@@ -113,7 +115,54 @@ section.cover-form{
     border: 0;
 }
 
-@media screen and (max-width: 510px) {
+section.chamada{
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+
+section.chamada div.container{
+    background-color: #29526D;
+    padding: 70px 0 50px 0;
+}
+
+section.chamada h2{
+    width: 98%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+section.chamada p{
+    width: 98%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+@media screen and (max-width:960px){
+    .bg{
+        height: auto;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .form-container{
+        height: auto;
+        width: 98%;
+        max-width: 400px;
+        position: static;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 510px){
     header{
         text-align: center;
     }
